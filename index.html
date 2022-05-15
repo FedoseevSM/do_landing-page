@@ -92,18 +92,20 @@
           </section>
         </div>
       </div>
-      <section class="sub">
+      <section class="_column _between sub">
         <h2>Sign Up to Our Newsletter</h2>
         <p>Yours could be one of them.</p>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />
+        <div class="_row sub__email">
+          <img src="./img/svg/mail.svg" alt="" />
+          <input
+            type="text"
+            required
+            minlength="10"
+            maxlength="40"
+            placeholder="Enter Your Email"
+          />
+          <button type="submit" class="blue-small">Send</button>
+        </div>
       </section>
     </main>
     <footer class="footer">
