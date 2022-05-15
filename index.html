@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
@@ -13,7 +17,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="_container _row _between header__inner">
+      <div class="_container _row _between _center header__inner">
         <a href="#" class="logo"
           ><img src="./img/logo.png" alt="Digital Ocean"
         /></a>
@@ -29,7 +33,7 @@
     <main>
       <div class="hero">
         <div class="_container">
-          <section class="_row _between">
+          <section class="_row _between _center">
             <div class="_column hero__about">
               <h2>Smart Business</h2>
               <h3>Connecting people is our <span>business</span></h3>
@@ -39,14 +43,14 @@
               </p>
               <div class="_row">
                 <a href="#" class="blue-big">Get Started</a>
-                <a href="#" class="_row _between white-big"
+                <a href="#" class="_row _between _center white-big"
                   ><img src="./img/svg/play.svg" alt="" />Get Started</a
                 >
               </div>
             </div>
             <img src="./img/svg/img.svg" />
           </section>
-          <section class="_row _between">
+          <section class="_row _between _center">
             <img src="./img/rectangle36.png" alt="" width="486" height="486" />
             <div class="_column hero__about">
               <h2>Community</h2>
@@ -65,8 +69,8 @@
       </div>
       <div class="feature">
         <h1>How We Work</h1>
-        <div class="_container _row _between">
-          <section class="_column">
+        <div class="_container _row _between _center">
+          <section class="_column _center">
             <img src="./img/svg/1st.svg" />
             <h2>Start Design</h2>
             <p>
@@ -74,7 +78,7 @@
               suscipit adipiscing elit.
             </p>
           </section>
-          <section class="_column">
+          <section class="_column _center">
             <img src="./img/svg/2st.svg" />
             <h2>Go to Code</h2>
             <p>
@@ -82,7 +86,7 @@
               suscipit adipiscing elit.
             </p>
           </section>
-          <section class="_column">
+          <section class="_column _center">
             <img src="./img/svg/3st.svg" />
             <h2>Final Deliverd</h2>
             <p>
@@ -92,7 +96,59 @@
           </section>
         </div>
       </div>
-      <section class="_column _between sub">
+      <section class="testimonial">
+        <div class="_container _row _between">
+          <h1>What Our Customers are Saying.</h1>
+          <div class="_row testimonials__arrows">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/avatars/avatar.png" alt="Leo Aminoff" />
+              <div class="_column _between testimonial__about">
+                <p>
+                  I recently concluded a complete messaging revamp for an
+                  exciting com
+                </p>
+                <div class="_column testimonial__author">
+                  <span class="testimonial__name">Leo Aminoff</span>
+                  <span class="testimonial__job">Product Designer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/avatars/avatar-2.png" alt="Carla Dias" />
+              <div class="_column _between testimonial__about">
+                <p>
+                  I recently concluded a complete messaging revamp for an
+                  exciting com
+                </p>
+                <div class="_column testimonial__author">
+                  <span class="testimonial__name">Carla Dias</span>
+                  <span class="testimonial__job">Product Designer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/avatars/avatar-3.png" alt="Ruben Siphron" />
+              <div class="_column _between testimonial__about">
+                <p>
+                  I recently concluded a complete messaging revamp for an
+                  exciting com
+                </p>
+                <div class="_column testimonial__author">
+                  <span class="testimonial__name">Ruben Siphron</span>
+                  <span class="testimonial__job">Product Designer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="_column _between _center sub">
         <h2>Sign Up to Our Newsletter</h2>
         <p>Yours could be one of them.</p>
         <div class="_row sub__email">
@@ -109,17 +165,51 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="_container footer__nav">
-        <div class="_container _row _between footer__nav_inner"></div>
+      <section class="footer__nav">
+        <div class="_container _row _between">
+          <menu>
+            <li>
+              <a href="#" class="logo"
+                ><img src="./img/logo.png" alt="Digital Ocean"
+              /></a>
+            </li>
+            <li><a href="#" class="">Smart business</a></li>
+            <li><a href="#" class="">Community</a></li>
+          </menu>
+          <menu>
+            <h2>Resources</h2>
+            <li><a href="#" class="">Start Business</a></li>
+            <li><a href="#" class="">Digital Marketing</a></li>
+            <li><a href="#" class="">Course Creation</a></li>
+            <li><a href="#" class="">Business Accelerator</a></li>
+          </menu>
+          <menu>
+            <h2>Mission</h2>
+            <li><a href="#" class="">About Digital Analyst</a></li>
+            <li><a href="#" class="">Team</a></li>
+            <li><a href="#" class="">Become a Partner</a></li>
+            <li><a href="#" class="">Privacy Policy</a></li>
+          </menu>
+          <menu>
+            <h2>Contact</h2>
+            <li><span class="">041-774073</span></li>
+            <li>
+              <a href="mailto:hello@digitalanalyst.org"
+                >hello@digitalanalyst.org</a
+              >
+            </li>
+            <li><a href="#" class="">Contact Form</a></li>
+          </menu>
+        </div>
       </section>
       <section class="footer__copy">
-        <div class="_container _row _between footer__copy_inner">
+        <div class="_container _row _between _center footer__copy_inner">
           <p>
             © 2021 DigitalAnalyst.org. A 50 non-profit organization. EIN:
             -3410655
           </p>
           <nav class="_row footer__auth">
-            <ul class="_row _between">
+            <ul class="_row _between _center">
               <li>
                 <a href="#"><img src="./img/svg/fb.svg" alt="Facebook" /></a>
               </li>
@@ -138,5 +228,7 @@
         </div>
       </section>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
