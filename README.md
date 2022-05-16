@@ -7,3 +7,4 @@
 - 16.05 - Исправил верхнее меню и добавил второй слайдер
 
 __GitHub Pages:__ https://samgxlden.github.io/do_landing-page/
+__Figma__: https://www.figma.com/file/CRHuH8WbX2m7y9pZipiuXb/digitalagencyuplabs-(Copy)?node-id=0%3A1
