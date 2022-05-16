@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+._container-big {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 ._row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -96,6 +101,10 @@ body {
   vertical-align: middle;
 }
 
+.header menu {
+  margin-left: calc(161px - 72px);
+}
+
 .header menu li {
   display: inline-block;
   margin-right: 40px;
@@ -112,14 +121,41 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
+  position: relative;
+}
+
+.header menu li a::before {
+  content: "";
+  position: absolute;
+  left: auto;
+  top: 52px;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: right center;
+      -ms-transform-origin: right center;
+          transform-origin: right center;
+  background: #0082F4;
 }
 
 .header menu li a:hover {
   color: #0082F4;
 }
 
-.header menu li a:hover::after {
-  content: "";
+.header menu li a:hover::before {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
 }
 
 .hero {
@@ -165,6 +201,64 @@ body {
   max-width: 436px;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+
+.hero__slider {
+  max-height: 545px;
+  position: relative;
+  top: 62px;
+}
+
+.hero__slider_item1 {
+  position: relative;
+}
+
+.hero__slider_item2 {
+  position: relative;
+  bottom: calc(486px + 62px);
+  left: 62px;
+  opacity: 0.5;
+  z-index: -5;
+}
+
+.hero__slider ._active {
+  z-index: 5 !important;
+  opacity: 1 !important;
+}
+
+.hero__slider ._disabled {
+  z-index: -6 !important;
+  opacity: 0.5 !important;
+}
+
+.hero__slider .play1 {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: calc(486px / 2 - 70px / 2);
+  right: calc(486px / 2 + 70px / 2);
+}
+
+.hero__slider .play1:hover {
+  width: 100px;
+  height: 100px;
+  bottom: calc(486px / 2 - 100px / 2);
+  right: calc(486px / 2 + 100px / 2);
+}
+
+.hero__slider .play2 {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: calc(486px / 2 - 70px / 2);
+  right: calc(486px / 2 + 70px / 2);
+}
+
+.hero__slider .play2:hover {
+  width: 100px;
+  height: 100px;
+  bottom: calc(486px / 2 - 100px / 2);
+  right: calc(486px / 2 + 100px / 2);
 }
 
 .feature {
