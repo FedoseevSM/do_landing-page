@@ -1,0 +1,123 @@
+.burger
+    width: 32px
+    heigth: 32px
+    position: relative
+    left: 45px
+    order: 4
+
+._active-burger
+    top: 120px !important
+
+._white-bg
+    display: none
+
+@media screen and ( min-width: 1201px )
+    .burger
+        display: none
+    
+@media screen and ( max-width: 1200px )
+    .sub
+        padding: 80px 30px
+    .footer__nav
+        padding: 80px 0 !important
+    .footer__copy_inner, .footer__auth
+        flex-direction: column !important
+        padding: 30px 0
+        align-items: center !important
+        height: 100% !important
+        ul
+            margin: 0 !important
+            margin-bottom: 30px !important
+    .footer__nav_inner, .feature__inner
+        flex-direction: column
+        menu, section
+            margin-bottom: 80px
+            &:last-child
+                margin-bottom: 0
+    .hero__slider
+        display: none
+    .hero__inner
+        flex-direction: column
+        &_img
+            margin-top: 80px
+    .hero__about
+        margin: 0 auto
+    .header
+        menu
+            position: absolute
+            //top: 29px
+            top: -500px
+            left: 0
+            background: #fff
+            text-align: center
+            width: 100%
+            margin: 0 !important
+        li
+            display: block !important
+            height: 80px
+            width: 100%
+
+
+@media screen and ( max-width: 640px )
+    .burger
+        left: 0
+    .header    
+        .blue-small
+            order: -1
+            display: none
+    .logo
+        order: -2
+    .sub__email
+        width: 390px !important
+        input
+            width: 150px
+    .hero__inner_img
+        width: 440px
+    .hero
+        margin-top: 80px !important
+        section
+            margin-bottom: 80px !important
+    .feature
+        margin-bottom: 80px !important
+    .swiper
+        margin: 60px auto 80px auto !important
+
+@media screen and ( max-width: 480px )
+    .sub__email
+        width: 330px !important
+        img
+            display: none
+        input
+            margin-left: 25px
+    .testimonial
+        display: none
+    .hero__buttons1
+        flex-direction: column !important
+        width: 196px
+    .hero__buttons1 a:first-child
+        margin-bottom: 20px !important
+    .hero__buttons2
+        width: 206px
+    .blue-big
+        margin: 0 !important
+    .hero__inner_img
+        width: 370px
+    .hero
+        &__about
+            h2
+                font-size: 20px !important
+                line-height: 24px !important
+            h3
+                font-size: 48.55px !important
+                line-height: 130% !important
+    .feature
+        h1
+            font-size: 42.44px !important
+            line-height: 150% !important
+
+
+@media screen and ( max-width: 370px )
+    .sub
+        display: none
+    .hero__inner_img
+        width: 260px

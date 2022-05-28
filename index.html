@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -21,7 +24,10 @@
         <a href="#" class="logo"
           ><img src="./img/logo.png" alt="Digital Ocean"
         /></a>
-        <menu>
+        <a href="#"
+          ><img id="burger" src="./img/menu-1.png" class="burger" alt=""
+        /></a>
+        <menu class="header__menu">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Services</a></li>
@@ -30,9 +36,9 @@
         <a href="#" class="blue-small">Get Started</a>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="hero">
-        <section class="_container _row _between _center">
+        <section class="_container _row _between _center hero__inner">
           <div class="_column hero__about">
             <h2>Smart Business</h2>
             <h3>Connecting people is our <span>business</span></h3>
@@ -40,16 +46,16 @@
               As a rule the organization settles on the inventive and media
               choices. Regularly it supplies supporting statistical.
             </p>
-            <div class="_row">
+            <div class="_row hero__buttons1">
               <a href="#" class="blue-big">Get Started</a>
               <a href="#" class="_row _between _center white-big"
                 ><img src="./img/svg/play.svg" alt="" />Get Started</a
               >
             </div>
           </div>
-          <img src="./img/svg/img.svg" />
+          <img src="./img/svg/img.svg" class="hero__inner_img" />
         </section>
-        <section class="_container-big _row _between _center">
+        <section class="_container-big _row _between _center hero__big-section">
           <div class="hero__slider">
             <div class="hero__slider_item1">
               <img
@@ -84,7 +90,7 @@
               vestibulum sagittis ultrices consectetur adipiscing elit.
               fringilla quisque pulvinar..
             </p>
-            <div class="_row">
+            <div class="_row hero__buttons2">
               <a href="#" class="blue-big">What we do?</a>
             </div>
           </div>
@@ -92,7 +98,7 @@
       </div>
       <div class="feature">
         <h1>How We Work</h1>
-        <div class="_container _row _between _center">
+        <div class="_container _row _between _center feature__inner">
           <section class="_column _center">
             <img src="./img/svg/1st.svg" />
             <h2>Start Design</h2>
@@ -189,7 +195,7 @@
     </main>
     <footer class="footer">
       <section class="footer__nav">
-        <div class="_container _row _between">
+        <div class="_container _row _between footer__nav_inner">
           <menu>
             <li>
               <a href="#" class="logo"

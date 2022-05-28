@@ -1,6 +1,7 @@
 @import 'vars'
 @import 'fonts'
 @import 'blocks'
+@import 'media'
 
 *,
 *::after,
@@ -40,7 +41,7 @@ body
     padding: 0
     margin: 0
     max-width: 100%
-    min-width: 1240px
+    min-width: 320px
 
 .header
     border-bottom: 1px solid #e5e5e5
@@ -49,7 +50,7 @@ body
     img
         vertical-align: middle
     menu
-        margin-left: calc(161px - 72px)
+        margin-left: -130px
     menu li
         display: inline-block
         margin-right: 40px
@@ -86,6 +87,10 @@ body
     margin-top: 100px
     section
         margin-bottom: 150px
+    &__big-section
+        padding: 0 50px
+        @media screen and ( max-width: 768px )
+            padding: 0 30px
     &__about
         h2
             color: $accent
@@ -317,7 +322,7 @@ body
 .sub
     background: rgba(232, 236, 255, 0.3)
     text-align: center
-    padding: 75px 0
+    padding: 75px 30px
     h2
         color: $accent
         font-family: 'Roboto'
@@ -362,6 +367,8 @@ body
 .footer
     &__copy
         background: linear-gradient(180deg, #058AFF 0%, rgba(57, 55, 206, 0.87) 97.91%)
+        @media screen and ( max-width: 768px )
+            padding: 0 30px
         &_inner
             height: 120px
             margin: auto auto
@@ -378,7 +385,7 @@ body
         li:last-child
             margin: 0
     &__nav
-        padding: 60px 0 50px 0
+        padding: 60px 0 80px 0
         .logo
             opacity: 1
             &:active
